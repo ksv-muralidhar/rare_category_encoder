@@ -1,3 +1,7 @@
+import pandas as pd
+import numpy as np
+from sklearn.base import BaseEstimator,TransformerMixin
+
 class RareCategoryEncoder(BaseEstimator, TransformerMixin):
     def __init__(self, threshold: float=0.05):
         self.threshold = threshold
